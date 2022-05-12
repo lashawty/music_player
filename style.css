@@ -1,0 +1,89 @@
+*{font-family: 'Poppins', sans-serif;}
+  
+.left{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    height: 900px;
+    width: 1201px;
+}
+.linkBTN{
+    font-size: 18px;
+    
+    left: 0;
+    top: 0;
+    width: 214px;
+    height: 73px;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 21px 117px 25px 25px; */
+    background-color: black;
+    color: rgb(113, 113, 113);
+    align-self:flex-start;
+}
+.fa-solid, .myAlbum{
+    font-size: 18px;
+    height: 30px;
+    align-self: center;
+    padding: 25px;
+}
+
+.linkBar{
+    background-color: #222222;
+    width: 199px;
+    height: 450px;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    text-align: left;
+    color: #868686;
+    padding:0 0 50px 15px;
+}
+
+.cover{
+    width: 194px;
+    height: 193px;
+    background-image:url(images/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align:start;
+}
+
+
+.albumName{
+    color: #959595;
+    width: 172px;
+    height: 20px;
+    text-align:start;
+}
+
+.right{
+    display: flex;
+    height: 800px;
+    width: 987px;
+    background-color: #2A2A2A;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    width: 987px;
+    height: 336px;
+    background-image:url(images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    justify-content: end;
+}
+.add{
+    width: 171px;
+    height: 43px;
+    background-color: rgba(216, 35, 35, 0.6);
+    border: 10px solid;
+    border-radius: 23.5px;
+}
