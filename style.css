@@ -1,11 +1,18 @@
 *{font-family: 'Poppins', sans-serif;}
-  
+.all{
+    display: flex;
+    height: 800px;
+    
+}
 .left{
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     /* flex-wrap: wrap; */
     height: 900px;
-    width: 1201px;
+    
 }
 .linkBTN{
     font-size: 18px;
@@ -62,8 +69,10 @@
 }
 
 .right{
-    display: flex;
-    height: 800px;
+    position: absolute;
+    top: 0;
+    left:214px;
+    height: 786px;
     width: 987px;
     background-color: #2A2A2A;
 }
@@ -95,3 +104,18 @@
     margin-right: 20px;
     
 }
+.list{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;;
+    align-items: center;
+    position: relative;
+    top:0;
+    left:0;
+    align-self: center;
+    flex-wrap: nowrap;
+
+      
+}
+
