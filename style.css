@@ -16,7 +16,6 @@
 }
 .linkBTN{
     font-size: 18px;
-    
     left: 0;
     top: 0;
     width: 214px;
@@ -27,12 +26,15 @@
     background-color: black;
     color: rgb(113, 113, 113);
     align-self:flex-start;
+    align-items: center;
 }
 .fa-solid, .myAlbum{
+    display: flex;
     font-size: 18px;
-    height: 30px;
+    height: 18px;
     align-self: center;
-    padding: 25px;
+    padding: 0px;
+
 }
 
 .linkBar{
@@ -46,6 +48,12 @@
     color: #868686;
     padding:0 0 50px 15px;
 }
+
+.linkBar :hover{
+    background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+    color: white;
+}
+
 
 .cover{
     width: 194px;
@@ -82,9 +90,11 @@
     flex-direction: column;
     width: 987px;
     height: 336px;
-    background-image:url(https://images.unsplash.com/photo-1573152958734-1922c188fba3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80);
+    background-image:url(https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    filter: blur(3px);
     color: white;
     text-align: center;
     justify-content: end;
@@ -105,17 +115,99 @@
     
 }
 .list{
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;;
-    align-items: center;
     position: relative;
-    top:0;
-    left:0;
-    align-self: center;
-    flex-wrap: nowrap;
-
-      
+    top: 60px;
 }
 
+
+ul{
+    list-style-type: none;
+    width: fit-content;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    left: 18px;
+}
+.list1{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    height: 20px;
+    background-color: #222222;
+    width: 850px;
+
+}
+.list :hover{
+    background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+}
+
+
+.songName{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.playBTN{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playBTN a{
+    display: flex;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    color:#474747;
+    margin: 0 1em;
+    text-decoration: none;
+}
+.volumeBTN{
+    position: absolute;
+    right: 200px;
+    color:#474747;
+}
+.ptD{
+    transform: translateY(-10px);
+}
+
+.coverTop{
+    width: 194px;
+    height: 193px;
+    background-image:url(https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.middle{
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    color: white;
+}
+.intro{
+    padding-left: 20px;
+    
+}
+.add{position: relative;
+    left: 300px;
+    bottom: 120px;
+    line-height: 2;}
+
+footer{
+    position: relative;
+    bottom: -380px;
+    display: flex;
+    justify-content: center;
+}
