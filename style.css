@@ -211,3 +211,14 @@ footer{
     display: flex;
     justify-content: center;
 }
+
+.play {
+    width: 70px;
+    height: 70px;
+    background-image: url(images/playBTN.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 80px;
+    top: 300px;
+}
