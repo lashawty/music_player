@@ -215,7 +215,7 @@ footer{
 .play {
     width: 70px;
     height: 70px;
-    background-image: url(images/playBTN.png);
+    background-image: url(playBTN.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
