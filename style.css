@@ -1,55 +1,54 @@
 *{font-family: 'Poppins', sans-serif;}
-.all{
-    display: flex;
-    height: 800px;
-    
-}
+
 .left{
     position: absolute;
     top: 0;
     left: 0;
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
-    height: 900px;
-    
+    height: 786px;
+    width: 214px;
 }
 .linkBTN{
     font-size: 18px;
     left: 0;
     top: 0;
-    width: 214px;
     height: 73px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    /* padding: 21px 117px 25px 25px; */
     background-color: black;
     color: rgb(113, 113, 113);
-    align-self:flex-start;
-    align-items: center;
+    align-items: center; 
+    
 }
-.fa-solid, .myAlbum{
-    display: flex;
-    font-size: 18px;
-    height: 18px;
-    align-self: center;
-    padding: 0px;
 
+.fa-solid, .myAlbum{
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .linkBar{
     background-color: #222222;
-    width: 199px;
-    height: 450px;
+    
+    height: 520px;
     top: 0;
     left: 0;
     display: inline-block;
     text-align: left;
     color: #868686;
-    padding:0 0 50px 15px;
+    
 }
-
-.linkBar :hover{
+.leftAlbums{
+    margin: auto;
+    padding: 10px 0 10px 10px;
+}
+.leftAlbums:hover{
+    background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+    color: white;
+    }
+.list1:hover{
     background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
     color: white;
 }
@@ -61,7 +60,7 @@
     background-image:url(https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10px;
+    padding: 20px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -71,9 +70,6 @@
 
 .albumName{
     color: #959595;
-    width: 172px;
-    height: 20px;
-    text-align:start;
 }
 
 .right{
@@ -94,7 +90,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter: blur(3px);
+    filter: blur(3px) brightness(70%);
     color: white;
     text-align: center;
     justify-content: end;
@@ -102,18 +98,37 @@
 }
 .add{
     width: 171px;
-    height: 30px;
+    height: 40px;
     background-color: rgba(0,0,0,0.60);;
     font-size: 16px;
-    border: 1px solid;
     border-radius: 23.5px;
     text-align: center;
     align-self:flex-end;
     justify-content: center;
     padding: 0;
     margin-right: 20px;
+    position: relative;
+    left: 300px;
+    bottom: 120px;
+    line-height: 2.5;
     
 }
+.topPlayBTN{
+    width: 300px;
+    height: 300px;
+    background-image: url(playBTN.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: -60px;
+    top: 180px;
+}
+.introTop{
+    margin: 0;
+    font-size: 30px;
+    
+}
+
 .list{
     position: relative;
     top: 60px;
@@ -139,14 +154,12 @@ ul{
     position: relative;
     padding: 10px;
     height: 20px;
-    background-color: #222222;
     width: 850px;
-
-}
-.list :hover{
-    background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
 }
 
+li:nth-child(odd){
+    background-color: #3a3a3a;
+}
 
 .songName{
     width: 300px;
@@ -169,14 +182,8 @@ ul{
     margin: 0 1em;
     text-decoration: none;
 }
-.volumeBTN{
-    position: absolute;
-    right: 200px;
-    color:#474747;
-}
-.ptD{
-    transform: translateY(-10px);
-}
+
+
 
 .coverTop{
     width: 194px;
@@ -196,29 +203,51 @@ ul{
     left: 50px;
     color: white;
 }
-.intro{
-    padding-left: 20px;
-    
-}
-.add{position: relative;
-    left: 300px;
-    bottom: 120px;
-    line-height: 2;}
 
 footer{
     position: relative;
     bottom: -380px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    height: 75px;
+    width: 100%;
 }
 
-.play {
-    width: 70px;
-    height: 70px;
-    background-image: url(playBTN.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.playBTN{
+    padding-top: 5px;
+}
+.progressBar1{
+    background-color: rgb(102, 102, 102);
+    height: 5px;
+    width: 100%;
+}
+
+.progressBar2{
+    background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+    height: 5px;
+    width: 50%;
+}
+
+.volumeBTN{
     position: absolute;
-    right: 80px;
-    top: 300px;
+    right: 113px;
+    color:#474747;
+    
+}
+
+.progressBar3{
+    position: absolute;
+    right: 11px;
+    background-color: rgb(102, 102, 102);
+    height: 5px;
+    width: 10%;
+    border-radius: 30px;
+}
+
+.progressBar4{
+    background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+    height: 5px;
+    width: 50%;
+    border-radius: 30px;
 }
